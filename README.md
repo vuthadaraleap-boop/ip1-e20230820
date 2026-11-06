@@ -1,6 +1,6 @@
 # Gym Membership
 
-Internet Programming I, project `ip1-e20230820`. Student: VUTHA DARALEAP (e20230820), group I3-GIC-B, lecturer CHUN Thavorac.
+Internet Programming I, project `ip1-e20230820`. Student: VUTHA DARALEAP (e20230820), group I4-GIC-B, lecturer CHUN Thavorac.
 
 A web app where gym members request a membership, book classes and cancel bookings, and front-desk staff confirm payments and manage classes. Stack: Vue 3 + TypeScript, NestJS, PostgreSQL with Prisma.
 
