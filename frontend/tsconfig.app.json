@@ -3,6 +3,9 @@
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
+    // Strict mode (also turned on by @vue/tsconfig, written here so it is visible).
+    "strict": true,
+
     // Extra safety for array and object lookups, but may have false positives.
     "noUncheckedIndexedAccess": true,
 

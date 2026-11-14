@@ -1,0 +1,46 @@
+{
+  "categories": ["Cardio", "Strength", "Mind & Body"],
+  "users": [
+    { "id": 1, "name": "Sokha Member", "email": "member@gym.test", "role": "MEMBER" },
+    { "id": 2, "name": "Dara Newcomer", "email": "new@gym.test", "role": "MEMBER" },
+    { "id": 3, "name": "Staff Sam", "email": "staff@gym.test", "role": "STAFF" },
+    { "id": 4, "name": "Admin Ada", "email": "admin@gym.test", "role": "ADMIN" },
+    { "id": 5, "name": "Lina Chea", "email": "lina@gym.test", "role": "MEMBER" },
+    { "id": 6, "name": "Vanna Pich", "email": "vanna@gym.test", "role": "MEMBER" },
+    { "id": 7, "name": "Rith Sok", "email": "rith@gym.test", "role": "MEMBER" },
+    { "id": 8, "name": "Maly Heng", "email": "maly@gym.test", "role": "MEMBER" }
+  ],
+  "plans": [
+    { "id": 1, "name": "Monthly", "description": "30 days of unlimited class booking.", "priceCents": 2900, "durationDays": 30, "active": true },
+    { "id": 2, "name": "Quarterly", "description": "90 days, cheaper per month.", "priceCents": 7900, "durationDays": 90, "active": true },
+    { "id": 3, "name": "Yearly", "description": "365 days, the best value.", "priceCents": 28000, "durationDays": 365, "active": true },
+    { "id": 4, "name": "Student trial", "description": "Old promotion, no longer offered.", "priceCents": 1500, "durationDays": 14, "active": false }
+  ],
+  "classes": [
+    { "id": 1, "title": "Morning HIIT", "description": "45 minutes of intervals to wake you up. All levels.", "category": "Cardio", "tags": ["morning", "intervals"], "startsInHours": 20, "durationMinutes": 45, "capacity": 12, "coachName": "Coach Rith", "status": "SCHEDULED" },
+    { "id": 2, "title": "Power Lifting Basics", "description": "Learn squat, bench and deadlift with safe form.", "category": "Strength", "tags": ["beginner", "barbell"], "startsInHours": 30, "durationMinutes": 60, "capacity": 8, "coachName": "Coach Sophea", "status": "SCHEDULED" },
+    { "id": 3, "title": "Express Core", "description": "A quick 30 minute core workout.", "category": "Strength", "tags": ["core", "quick"], "startsInHours": 1.5, "durationMinutes": 30, "capacity": 10, "coachName": "Coach Rith", "status": "SCHEDULED" },
+    { "id": 4, "title": "Spin Sprint", "description": "High energy indoor cycling with short sprints.", "category": "Cardio", "tags": ["cycling", "intervals"], "startsInHours": 26, "durationMinutes": 40, "capacity": 2, "coachName": "Coach Dara", "status": "SCHEDULED" },
+    { "id": 5, "title": "Evening Yoga Flow", "description": "Slow flow to stretch and relax after work.", "category": "Mind & Body", "tags": ["evening", "stretching"], "startsInHours": 28, "durationMinutes": 60, "capacity": 15, "coachName": "Coach Nary", "status": "SCHEDULED" },
+    { "id": 6, "title": "Kettlebell Circuit", "description": "Full body circuit with kettlebells.", "category": "Strength", "tags": ["kettlebell", "full body"], "startsInHours": 50, "durationMinutes": 50, "capacity": 10, "coachName": "Coach Sophea", "status": "SCHEDULED" },
+    { "id": 7, "title": "Pilates Reformer", "description": "Small group pilates on reformer machines.", "category": "Mind & Body", "tags": ["pilates", "small group"], "startsInHours": 52, "durationMinutes": 55, "capacity": 6, "coachName": "Coach Nary", "status": "SCHEDULED" },
+    { "id": 8, "title": "Weekend Boxing", "description": "Boxing technique and bag work.", "category": "Cardio", "tags": ["boxing", "weekend"], "startsInHours": 74, "durationMinutes": 60, "capacity": 14, "coachName": "Coach Dara", "status": "SCHEDULED" },
+    { "id": 9, "title": "Mobility Reset", "description": "Gentle mobility work for stiff joints.", "category": "Mind & Body", "tags": ["mobility"], "startsInHours": -48, "durationMinutes": 45, "capacity": 12, "coachName": "Coach Nary", "status": "SCHEDULED" },
+    { "id": 10, "title": "Zumba Party", "description": "Cancelled by the gym.", "category": "Cardio", "tags": ["dance"], "startsInHours": 60, "durationMinutes": 60, "capacity": 20, "coachName": "Coach Dara", "status": "CANCELLED" }
+  ],
+  "memberships": [
+    { "id": 1, "userId": 1, "planId": 1, "status": "ACTIVE", "startedDaysAgo": 10, "paymentMethod": "CASH" },
+    { "id": 2, "userId": 5, "planId": 2, "status": "ACTIVE", "startedDaysAgo": 5, "paymentMethod": "CARD" },
+    { "id": 3, "userId": 6, "planId": 1, "status": "ACTIVE", "startedDaysAgo": 3, "paymentMethod": "BANK_TRANSFER" },
+    { "id": 4, "userId": 7, "planId": 2, "status": "PENDING", "startedDaysAgo": null, "paymentMethod": null },
+    { "id": 5, "userId": 8, "planId": 1, "status": "PENDING", "startedDaysAgo": null, "paymentMethod": null }
+  ],
+  "bookings": [
+    { "id": 1, "userId": 1, "classId": 2, "status": "BOOKED", "createdHoursAgo": 5 },
+    { "id": 2, "userId": 1, "classId": 3, "status": "BOOKED", "createdHoursAgo": 8 },
+    { "id": 3, "userId": 1, "classId": 9, "status": "BOOKED", "createdHoursAgo": 100 },
+    { "id": 4, "userId": 1, "classId": 6, "status": "CANCELLED", "createdHoursAgo": 20 },
+    { "id": 5, "userId": 5, "classId": 4, "status": "BOOKED", "createdHoursAgo": 12 },
+    { "id": 6, "userId": 6, "classId": 4, "status": "BOOKED", "createdHoursAgo": 10 }
+  ]
+}
